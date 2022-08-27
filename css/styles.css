@@ -85,12 +85,19 @@ p {
   align-items: center;
   margin-left: auto;
 }
-.header-contacts li {
+.header-contacts-item {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
 }
 .header-contacts li:not(:last-child) {
   margin-right: 50px;
+}
+.header-contacts-item a:hover + .link-icon-phone,
+.header-contacts-item a:focus + .link-icon-phone,
+.header-contacts-item a:hover + .link-icon-envelope,
+.header-contacts-item a:focus + .link-icon-envelope {
+  fill: var(--second-color);
 }
 .header-logo {
   font-family: 'Raleway', sans-serif;
