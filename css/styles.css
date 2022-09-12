@@ -533,7 +533,8 @@ li {
 .social__link:focus .social__icon {
   background-color: var(--second-color);
   fill: var(--white-color);
-
+ 
+ 
 }
 
 /* Modal */
@@ -549,7 +550,7 @@ li {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
-.backdrop--hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -567,7 +568,7 @@ li {
   border-radius: 4px;
   background-color: var(--background-color-white)
 }
-.backdrop--hidden .modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
 .modal__close-wrapper {
